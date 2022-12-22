@@ -2,7 +2,8 @@ FROM ruby:3.1.2-slim-bullseye
 
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   curl \
-  gnupg2
+  gnupg2 \
+  make
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
