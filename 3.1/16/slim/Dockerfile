@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-slim
+FROM ruby:3.1.2-slim-bullseye
 
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   curl \
